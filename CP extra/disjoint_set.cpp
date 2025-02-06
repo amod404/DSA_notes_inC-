@@ -20,6 +20,7 @@ public:
     int findUpar(int node){
         if(node == parent[node])
             return node;
+        else
             return parent[node]=findUpar(parent[node]);
     }
 
